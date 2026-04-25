@@ -1,0 +1,53 @@
+# Secrets — never, ever
+.env
+.env.local
+*.pem
+*.key
+*.p12
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+log/
+logs/
+
+# Databases — recreated by init_db()
+*.db
+*.sqlite
+*.sqlite3
+
+# Eval intermediates — keep .md, drop the rest
+eval/results/*.json
+eval/results/*.csv
+!eval/results/*.md
+
+# Coverage
+.coverage
+htmlcov/
+coverage.xml
